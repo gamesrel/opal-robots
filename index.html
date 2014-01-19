@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>opal-robots</title>
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+      }
+      a:visited {
+        color: #00e;
+      }
+      a:hover {
+        color: #e00;
+      }
+      .or {
+        margin-bottom: 1em;
+      }
+      #welcome, #log {
+        background-color: #f7f7f7;
+        border: 1px solid #e0e0e0;
+        padding: 1em;
+      }
+      #arena, #text {
+        float: left;
+      }
+      #text {
+        width: 390px;
+        margin-right: 10px;
+      }
+      #arena svg {
+        border: 1px solid #e0e0e0;
+        background-image: url("tiles.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text">
+      <div id="welcome">
+        <h1>Hello.</h1>
+        <p>
+          This is in-browser version of
+          <a href="http://rrobots.rubyforge.org/">Ruby Robots</a>!
+        </p>
+        <p>
+          Feel free to check out some of the cool robot battles from the
+          <a href="http://rubyquiz.com/quiz59.html">Ruby Quiz</a>:
+          <ul>
+            <li>
+              <a href="#8499891vs8499895" target="_blank">Simple battle</a>
+              between
+              <a href="https://gist.github.com/4r2r/8499891">SittingDuck</a>
+              and
+              <a href="https://gist.github.com/4r2r/8499895">NervousDuck</a>.
+            </li>
+            <li>
+              <a href="#8500160vs8500156" target="_blank">Battle</a>
+              between
+              <a href="https://gist.github.com/4r2r/8500160">Ente</a>
+              and
+              <a href="https://gist.github.com/4r2r/8500156">RubberDuck</a>.
+            </li>
+          </ul>
+          <div class="or">- or -</div>
+          <ol>
+            <li>
+              Create a
+              <a href="https://gist.github.com/">gist</a>
+              for each robot program.
+            </li>
+            <li>
+              Add gist identificators separated by "vs" to the url like
+              <a href="#8499891vs8499895" target="_blank">this</a>.
+            </li>
+          </ol>
+        </p>
+      </div>
+      <pre id="log">Battle report</pre>
+    </div>
+    <div id="arena"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
